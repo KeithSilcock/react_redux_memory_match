@@ -10,7 +10,7 @@ class CardHolder extends React.Component {
 
     getRandomSetOfCards(numOfCardsToGet){
         const tempArray = elementArray.slice(0);
-        const newElementArray = []
+        const newElementArray = [];
 
         for(let cardIndex=0; cardIndex<numOfCardsToGet; cardIndex++) {
             newElementArray.push(
@@ -21,7 +21,7 @@ class CardHolder extends React.Component {
 
     render(){
 
-        const cardArray = this.getRandomSetOfCards(16);
+        const cardArray = this.getRandomSetOfCards(12);
         const cardInput = cardArray.map( (element, index) => {
             return(
                 <Card key={index} text={element.name}/>
