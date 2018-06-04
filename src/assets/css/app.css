@@ -133,7 +133,9 @@
     border-radius: 5%;
 }
 .card{
-    position: absolute;
+    position: relative;
+    width: 10%;
+    height: 25%;
     /*background-color: white;*/
     /*background-color: yellow;*/
 }
